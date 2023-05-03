@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Guid>io.github.xhayper.COTL_Multiplayer</Guid>
+        <Product>COTL_Multiplayer</Product>
+    </PropertyGroup>
+
+    <Import Project="../COTL_Multiplayer.Common.props" />
+
+    <ItemGroup>
+        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.2.286-r.0" />
+    </ItemGroup>
+</Project>
