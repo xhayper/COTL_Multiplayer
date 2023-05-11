@@ -7,6 +7,31 @@
     <Import Project="../COTL_Multiplayer.Common.props" />
 
     <ItemGroup>
-        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.3.297-r.0" />
+        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.5.310-r.0" />
+    </ItemGroup>
+
+    <!-- MIRROR -->
+    <ItemGroup>
+        <Reference Include="kcp2k">
+            <HintPath>..\Packages\Mirror\kcp2k.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror.Authenticators">
+            <HintPath>..\Packages\Mirror\Mirror.Authenticators.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror.Components">
+            <HintPath>..\Packages\Mirror\Mirror.Components.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror">
+            <HintPath>..\Packages\Mirror\Mirror.dll</HintPath>
+        </Reference>
+        <Reference Include="Mirror.Transports">
+            <HintPath>..\Packages\Mirror\Mirror.Transports.dll</HintPath>
+        </Reference>
+        <Reference Include="SimpleWebTransport">
+            <HintPath>..\Packages\Mirror\SimpleWebTransport.dll</HintPath>
+        </Reference>
+        <Reference Include="Telepathy">
+            <HintPath>..\Packages\Mirror\Telepathy.dll</HintPath>
+        </Reference>
     </ItemGroup>
 </Project>
