@@ -1,0 +1,3 @@
+[submodule "Packages/Mirror"]
+	path = Packages/Mirror
+	url = https://github.com/MirrorNetworking/Mirror.git
