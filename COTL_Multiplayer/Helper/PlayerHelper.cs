@@ -9,8 +9,6 @@ public static class PlayerHelper
     {
         // var playerPrefab = Object.Instantiate(LocationManager._Instance.PlayerPrefab);
         var playerPrefab = LocationManager._Instance.PlacePlayer();
-        playerPrefab.SetActive(false);
-
         playerPrefab.tag = "Untagged";
 
         Object.Destroy(playerPrefab.GetComponent<PlayerController>());
@@ -33,7 +31,6 @@ public static class PlayerHelper
         Object.Destroy(playerPrefab.transform.Find("Aiming Target").gameObject);
         Object.Destroy(playerPrefab.transform.Find("CharacterBase").Find("Heavy Attack Target").gameObject);
 
-        playerPrefab.SetActive(true);
         return playerPrefab;
     }
 }
