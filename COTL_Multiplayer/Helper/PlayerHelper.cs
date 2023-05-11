@@ -3,14 +3,14 @@ using Object = UnityEngine.Object;
 
 namespace COTL_Multiplayer.Helper;
 
-public class PlayerHelper
+public static class PlayerHelper
 {
     public static GameObject CreatePlayer()
     {
         // var playerPrefab = Object.Instantiate(LocationManager._Instance.PlayerPrefab);
         var playerPrefab = LocationManager._Instance.PlacePlayer();
         playerPrefab.tag = "Untagged";
-        
+
         Object.Destroy(playerPrefab.GetComponent<PlayerController>());
         Object.Destroy(playerPrefab.GetComponent<PlayerFarming>());
         Object.Destroy(playerPrefab.GetComponent<Inventory>());
