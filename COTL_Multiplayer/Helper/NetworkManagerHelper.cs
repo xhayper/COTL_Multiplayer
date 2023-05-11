@@ -10,13 +10,15 @@ public static class NetworkManagerHelper
     public static GameObject CreateNetworkManager()
     {
         var networkManager = new GameObject("NetworkManager");
-        
+        networkManager.SetActive(false);
+
         var managerScript = networkManager.AddComponent<NetworkManagerCOTL>();
         var managerHud = networkManager.AddComponent<NetworkManagerHUD>();
         var kcpTransport = networkManager.AddComponent<KcpTransport>();
 
         managerScript.transport = kcpTransport;
 
+        networkManager.SetActive(true);
         return networkManager;
     }
 }

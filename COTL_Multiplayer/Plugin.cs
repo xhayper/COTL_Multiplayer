@@ -20,7 +20,7 @@ public class Plugin : BaseUnityPlugin
     internal new ManualLogSource Logger { get; private set; } = new(MyPluginInfo.PLUGIN_NAME);
 
     internal string PluginPath { get; private set; } = "";
-    
+
     internal GameObject NetworkManager { get; private set; }
 
     private void Awake()

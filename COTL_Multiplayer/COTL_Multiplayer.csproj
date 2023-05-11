@@ -4,10 +4,10 @@
         <Product>COTL_Multiplayer</Product>
     </PropertyGroup>
 
-    <Import Project="../COTL_Multiplayer.Common.props" />
+    <Import Project="../COTL_Multiplayer.Common.props"/>
 
     <ItemGroup>
-        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.5.310-r.0" />
+        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.5.310-r.0"/>
     </ItemGroup>
 
     <!-- MIRROR -->
