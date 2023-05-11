@@ -15,6 +15,8 @@ public static class NetworkManagerHelper
         var managerHud = networkManager.AddComponent<NetworkManagerHUD>();
         var kcpTransport = networkManager.AddComponent<KcpTransport>();
 
+        managerScript.transport = kcpTransport;
+
         return networkManager;
     }
 }
