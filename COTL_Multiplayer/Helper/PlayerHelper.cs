@@ -11,25 +11,25 @@ public static class PlayerHelper
         var playerPrefab = LocationManager._Instance.PlacePlayer();
         playerPrefab.tag = "Untagged";
 
-        Object.Destroy(playerPrefab.GetComponent<PlayerController>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerFarming>());
-        Object.Destroy(playerPrefab.GetComponent<Inventory>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerSimpleInventory>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerArrows>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerWeapon>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerSpells>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerStealth>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerAbility>());
-        Object.Destroy(playerPrefab.GetComponent<PlayerRelic>());
-        Object.Destroy(playerPrefab.GetComponent<Interactor>());
+        playerPrefab.GetComponent<PlayerController>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerFarming>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<Inventory>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerSimpleInventory>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerArrows>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerWeapon>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerSpells>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerStealth>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerAbility>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<PlayerRelic>().gameObject.SetActive(false);
+        playerPrefab.GetComponent<Interactor>().gameObject.SetActive(false);
 
-        Object.Destroy(playerPrefab.transform.Find("Canvas").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("InventoryItemIcon").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("Weapon Aiming").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("Curse Aiming").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("Heavy Aiming").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("Aiming Target").gameObject);
-        Object.Destroy(playerPrefab.transform.Find("CharacterBase").Find("Heavy Attack Target").gameObject);
+        playerPrefab.transform.Find("Canvas").gameObject.SetActive(false);
+        playerPrefab.transform.Find("InventoryItemIcon").gameObject.SetActive(false);
+        playerPrefab.transform.Find("Weapon Aiming").gameObject.SetActive(false);
+        playerPrefab.transform.Find("Curse Aiming").gameObject.SetActive(false);
+        playerPrefab.transform.Find("Heavy Aiming").gameObject.SetActive(false);
+        playerPrefab.transform.Find("Aiming Target").gameObject.SetActive(false);
+        playerPrefab.transform.Find("CharacterBase").Find("Heavy Attack Target").gameObject.SetActive(false);
 
         return playerPrefab;
     }
