@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Mirror;
+using UnityEngine;
 using Object = UnityEngine.Object;
 
 namespace COTL_Multiplayer.Helper;
@@ -31,6 +32,14 @@ public static class PlayerHelper
         playerPrefab.transform.Find("Aiming Target").gameObject.SetActive(false);
         playerPrefab.transform.Find("CharacterBase").Find("Heavy Attack Target").gameObject.SetActive(false);
 
+        var networkIdentity = playerPrefab.AddComponent<NetworkIdentity>();
+        var networkTransform = playerPrefab.AddComponent<NetworkTransform>();
+
+        // `set` is internal for some reason lmao
+        // networkIdentity.assetId = 1248124;
+        
+        networkTransform.target = playerPrefab.transform;
+        
         return playerPrefab;
     }
 }
