@@ -7,7 +7,7 @@
     <Import Project="../COTL_Multiplayer.Common.props"/>
 
     <ItemGroup>
-        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.5.310-r.0"/>
+        <PackageReference Include="CultOfTheLamb.GameLibs" Version="1.2.7.29-r.0"/>
     </ItemGroup>
 
     <!-- MIRROR -->
